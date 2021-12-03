@@ -6,17 +6,17 @@ public class Exercise7 {
     public static void main(String[]args){
 
         Scanner scanner = new Scanner(System.in);
-        int input;
-        int h;
-        int s;
-        int m;
-        int d=60;
         System.out.println("Enter seconds to convert:");
-                input = scanner.nextInt();
-                h = input / d;
-                m = h / d;
-                s = h % d;
-                 System.out.println(m +":"+s );
+              int  input = scanner.nextInt();
+
+                int d=60;
+        int secs = input % d;
+        int hour = input / d;
+        int mins= hour % d;
+        hour = hour / d;
+        System.out.print( hour + ":" + mins + ":" + secs);
+        System.out.print("\n");
+
 
 
     }
